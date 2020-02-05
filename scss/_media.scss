@@ -1,0 +1,94 @@
+@media screen and (max-width: 767px) {
+    img#optional {
+       display: none;
+    }
+    .main-header {
+        .menu-icon {
+            display: block;
+
+            //to put an ass at the top open the mega menu opens
+            &__line {
+                //middle line, the actual element is the mid line
+                animation: closedMid 0.8s backwards;
+                animation-direction: reverse;
+                //Top line
+                &::before {
+                    animation: closedTop 0.8s backwards;
+                    animation-direction: reverse;
+                }
+                //Buttom line so I had to target them individaul
+                &::after {
+                    animation: closedBtm 0.8s backwards;
+                    animation-direction: reverse;
+                }
+            }
+        }
+        //nav links it's my ul
+        .nav-links {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            flex-direction: column;
+            // justify-content: space-around;
+            align-items: left;
+            padding: 20rem 3rem;
+            width: 100vw;
+            height: 100vh;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            background: #fff;
+            transition: 
+                opacity .8s .5s,
+                clip-path 1s .5s;
+            clip-path: rect(200px at top right); //this is my onw styling 
+            
+            // I want the links ro slide in right
+            .nav-link {
+                opacity: 0;
+                transform: translateX(100%); //I want it to mode 100% of it's width to th right
+                width: 100%;
+                text-align: left;
+
+                a {
+                    display: block;
+                    padding: 2rem 0;
+                }
+            }
+        }
+
+        //thi is a sibling selector
+        .menu-btn:checked ~ .nav-links {
+            opacity: 1;
+            clip-path: rexr(100% at left);
+
+            //this will create a bounce like an elastic bounce
+            .nav-link {
+                opacity: 1;
+                transform: translateX(0);
+                transition: 
+                opacity .4s ease-in-out 1s,
+                transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+            }
+        }
+
+        .menu-btn:checked ~ .menu-icon {
+
+            // we want to make this accessable to any device and helpful to screen readers
+            .menu-icon__line {
+                background: #222;
+                animation: openMid 0.8s forwards;
+
+                &::before {
+                    background: #222;
+                    animation: openTop 0.8s forwards;
+                }
+                &::after {
+                    background: #222;
+                    animation: openBtm 0.8s forwards;
+                }
+            }
+        }
+    }   
+}

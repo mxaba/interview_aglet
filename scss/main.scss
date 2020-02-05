@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica Neue&display=swap');
+@import 'main_header';
+@import 'media';
+@import 'anim';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // background: #000;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    // background-color: #222;
+}
+
