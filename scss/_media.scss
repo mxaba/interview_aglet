@@ -37,7 +37,7 @@
             height: 100vh;
             font-size: 20px;
             font-weight: bold;
-            color: #222;
+            color: #000;
             background: #fff;
             transition: 
                 opacity .8s .5s,
@@ -77,15 +77,15 @@
 
             // we want to make this accessable to any device and helpful to screen readers
             .menu-icon__line {
-                background: #222;
+                background: #000;
                 animation: openMid 0.8s forwards;
 
                 &::before {
-                    background: #222;
+                    background: #000;
                     animation: openTop 0.8s forwards;
                 }
                 &::after {
-                    background: #222;
+                    background: #000;
                     animation: openBtm 0.8s forwards;
                 }
             }
