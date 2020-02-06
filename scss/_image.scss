@@ -1,0 +1,111 @@
+.scroll-slider {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    color: #fff;
+  }
+  
+  .scroll-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .scroll-slide {
+    flex: 1 0 75vw;
+    max-width: 35vw;
+    height: 15vh;
+  }
+
+  // .container {
+  //   margin-top: 500px;
+  //   // margin-bottom: 50px;
+  // }
+  
+  .item {
+          margin-top: 390px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    &-container {
+       position: relative;
+    }
+    &-title {
+      font-size: 2vw;
+      font-weight: bold;
+      line-height: 1;
+    }
+    // &-body {
+    //   @media (min-width:40em) {
+    //     position: absolute;
+    //     left: 100%;
+    //     top: 50%;
+    //     width: 50%;
+    //     transform: translate(-25%, -50%);
+    //   }
+    // }
+  }
+
+  #videosList {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 80px; }
+    @media (max-width: 1250px) {
+      #videosList {
+        padding: 0px 50px; } }
+    @media (max-width: 900px) {
+      #videosList {
+        padding: 60px 20px; } }
+    #videosList .video {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      position: relative;
+      overflow: hidden; }
+      @media (max-width: 500px) {
+        #videosList .video {
+          width: 100%; } }
+      #videosList .video .videoSlate {
+        width: 100%;
+        height: 0;
+        padding: 60% 0 0 0;
+        -webkit-transition: 5000ms 50ms;
+        -moz-transition: 5000ms 50ms;
+        transition: 5000ms 50ms; }
+        #videosList .video .videoSlate:after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.3);
+          -webkit-transition: 500ms 50ms;
+          -moz-transition: 500ms 50ms;
+          transition: 500ms 50ms; }
+        #videosList .video .videoSlate video {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute; }
+      #videosList .video .videoListCopy {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        z-index: 20; }

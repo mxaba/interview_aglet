@@ -3,11 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 100px;
     width: 100%;
     padding: 0 10vw;
     color: #fff;
     background: #222;
+    z-index: 1;
 
     a {
         text-decoration: none;
