@@ -453,23 +453,21 @@
 
 .item-titl {
   color: #222;
-  font-size: 9vw;
+  font-size: 10vw;
   font-weight: bold;
   line-height: 1;
 }
 
-.item-titl1 {
-  color: #222;
-  font-size: 2px;
-  font-weight: bold;
+.item-titl2 {
+  font-size: 1vw;
   line-height: 1;
 }
 
 @media (min-width: 40em) {
   .item-body1 {
     position: absolute;
-    left: 98%;
-    top: 50%;
+    left: 98.9%;
+    top: 40%;
     width: 50%;
     -webkit-transform: translate(-25%, -50%);
             transform: translate(-25%, -50%);
@@ -477,14 +475,40 @@
 }
 
 @media (min-width: 40em) {
-  .item-body1-body2 {
+  .item-body2 {
     position: absolute;
-    left: 98%;
-    top: 40%;
+    left: 117%;
+    top: 53%;
+    width: 40%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+  }
+}
+
+@media (min-width: 40em) {
+  .item-body3 {
+    position: absolute;
+    left: 120%;
+    top: 63%;
     width: 50%;
     -webkit-transform: translate(-25%, -50%);
             transform: translate(-25%, -50%);
   }
+}
+
+@media (min-width: 40em) {
+  .item-body4 {
+    position: absolute;
+    left: 120%;
+    top: 73%;
+    width: 50%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+  }
+}
+
+.whitecolor {
+  color: white;
 }
 
 * {
