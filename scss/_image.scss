@@ -8,6 +8,7 @@
   }
   
   .scroll-wrapper {
+    
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -49,13 +50,34 @@
       font-weight: bold;
       line-height: 1;
     }
-    // &-body {
-    //   @media (min-width:40em) {
-    //     position: absolute;
-    //     left: 100%;
-    //     top: 50%;
-    //     width: 50%;
-    //     transform: translate(-25%, -50%);
-    //   }
-    // }
+    &-titl {
+      color: #222;
+      font-size: 9vw;
+      font-weight: bold;
+      line-height: 1;
+    }
+    &-titl1 {
+      color: #222;
+      font-size: 2px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    &-body1 {
+      @media (min-width:40em) {
+        position: absolute;
+        left: 98%;
+        top: 50%;
+        width: 50%;
+        transform: translate(-25%, -50%);
+      }
+      &-body2 {
+        @media (min-width:40em) {
+          position: absolute;
+          left: 98%;
+          top: 40%;
+          width: 50%;
+          transform: translate(-25%, -50%);
+        }
+      }
+    }
   }
